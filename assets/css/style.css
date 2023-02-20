@@ -42,6 +42,7 @@ body {
 .form-button {
     border: 1px;
     background: #764f5a;
+    color:#fff;
     text-transform: uppercase;
     cursor: pointer;
     margin-left: 0.25rem;
@@ -67,17 +68,23 @@ body {
 }
 
 .check-button, .delete-button {
-    background-color: #F6F1D1;
+    background-color:#3f111e;
+    color: #fff;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     outline: none;
     border-radius: 2px;
     cursor: pointer;
+    font-weight: 700;
+}
+.check-button:hover, .delete-button:hover{
+    background-color: #fff;
+    color: #3f111e;
 }
 
 .task.done .check-button {
-    background-color: #46494C;
-    color: #F6F1D1;
+    background-color: #b991ac;
+    color: #601e35;
 }
 
 .check-icon {
