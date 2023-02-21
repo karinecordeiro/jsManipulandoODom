@@ -1,28 +1,29 @@
 body {
     margin: 0;
+    background-color: #ded1d5;
 }
 
 .app {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    width: 100vw;
     min-height: 100vh;
+    width: 100vw;
 }
 
 .todo-list {
-    background-color: #50232c;
-    font-family: "Space Mono", monospace;
-    padding: 1rem;
-    min-width: 400px;
+    background-color: #502329;
+    font-family: 'Poppins', sans-serif;
     min-height: 300px;
+    min-width: 400px;
+    padding: 1rem;
 }
 
 .title {
     border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+    color: #fff;
     font-size: 1.5rem;
-    font-family: "BioRhyme", serif;
-    color: #F6F1D1;
+    text-transform: uppercase;
 }
 
 .form {
@@ -31,69 +32,74 @@ body {
 }
 .form-input, .form-button {
     border-radius: 0;
-    padding: 0.75rem;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.75rem;
+    padding: 0.75rem;
 }
 .form-input {
-    outline: none;
-    background-color: #e3e1e2;
+    background-color: #fff;
     border-color: rgba(255, 255, 255, 0.1);
+    outline: none;
 }
 .form-button {
+    background: #6a424e;
     border: 1px;
-    background: #764f5a;
     color:#fff;
-    text-transform: uppercase;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
     margin-left: 0.25rem;
+    text-transform: uppercase;
 }
 .form-button:hover {
-    color: #f6d1e2;
-    background: rgba(49, 6, 12, 0.383);
+    background: #341116f8;
+    color: #fff;
 }
 
 .list {
-    padding: 0;
     list-style: none;
+    padding: 0;
     width: 100%;
 }
 
 .task {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #F6F1D1;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 0.5rem;
     padding: 1rem 3rem;
 }
 
 .check-button, .delete-button {
-    background-color:#3f111e;
-    color: #fff;
+    background-color:#341116f8;
     border: none;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    outline: none;
     border-radius: 2px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
     cursor: pointer;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0.5rem;
+    padding: 0.25rem;
+    outline: none;
 }
 .check-button:hover, .delete-button:hover{
     background-color: #fff;
-    color: #3f111e;
+    color: #341116f8;
+    font-weight: 500;
 }
 
 .task.done .check-button {
-    background-color: #b991ac;
-    color: #601e35;
+    background-color: #ad7c86;
+    color: #341116f8;
 }
 
 .check-icon {
-    display: block;
-    padding: 1px;
-    width: 10px;
-    height: 10px;
     background-color: transparent;
     border-radius: 50%;
+    display: block;
+    height: 10px;
+    padding: 1px;
+    width: 10px;
 }
 
 .task.done .check-icon {
